@@ -1,0 +1,34 @@
+{
+  "name": "frontbook-react-stylejsx-tailwind-example",
+  "version": "1.0.0",
+  "description": "Frontbook react example",
+  "browser": "true",
+  "scripts": {
+    "dev": "frontbook-react dev",
+    "new": "npx ts-node scripts/new.ts",
+    "export": "frontbook-react export",
+    "watch": "frontbook-react watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.1",
+    "css-loader": "^6.0.0",
+    "file-loader": "^6.2.0",
+    "frontbook-react": "^1.1.37",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.9",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^6.1.1",
+    "postcss-nested": "^5.0.5",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^12.1.0",
+    "styled-jsx": "5.0.0-beta.7",
+    "tailwindcss": "^2.2.7",
+    "url-loader": "^4.1.1"
+  },
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}

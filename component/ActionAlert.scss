@@ -1,0 +1,128 @@
+.actionAlert {
+  width: 270px;
+  height: 136.5px;
+  margin-top: 32px;
+  margin-left: 32px;
+  border-radius: 14px;
+  backdrop-filter: blur(22px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: #F2F2F2CC;
+  ;
+
+  .title {
+    width: 238px;
+    height: 22px;
+    color: #000000;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+  
+    /* identical to box height, or 129% */
+    text-align: center;
+    letter-spacing: -0.408px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .subtitle {
+    /* ✏️ Description */
+    width: 238px;
+    height: 36px;
+    margin-top: 6px;
+    margin-left: 16px;
+  
+    /* Default/Regular/Footnote */
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+  
+    /* or 138% */
+    text-align: center;
+    letter-spacing: -0.078px;
+
+    /* Label Color/Light/Primary */
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  
+  .seperator {
+    width: 270px;
+    height: 0.5px;
+    position: absolute;
+    top: 92px;
+
+    /* Separator Color/Light/With Transparency */
+    background: rgba(60, 60, 67, 0.36);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  
+  .actionLabel {
+    /* ✏️ Action */
+    width: 52px;
+    height: 22px;
+    margin-top: 23px;
+    margin-left: 109px;
+  
+    /* Default/Bold/Body */
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+  
+    /* identical to box height, or 129% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.408px;
+  
+    /* Default/SystemBlue/Light */
+    color: #007AFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .-dark {
+    background-color: #1E1E1EBF;
+    ;
+    .title {
+      color: #FFFFFF;
+    }
+    .subtitle {
+      color: #FFFFFF;
+    }
+    .seperator {
+      /* Separator Color/Dark/With Transparency */
+      background: rgba(84, 84, 88, 0.65);
+    }
+    .actionLabel {
+      /* Default/SystemBlue/Dark */
+      color: #0A84FF;
+    }
+  }
+ }
