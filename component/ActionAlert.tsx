@@ -23,7 +23,7 @@ const ActionAlert = (props: IActionAlertProps) => {
   return (
     <>
       <div className={`actionAlert${props.theme === 'Light' ? '' : ' -dark'}`}>
-        <div className="title"></div>
+        <div className="title">{props.title}</div>
         <div className="subtitle">{props.subtitle}</div>
         <div className="seperator"></div>
         <div className="actionLabel">{props.actionLabel}</div>
