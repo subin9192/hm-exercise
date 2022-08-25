@@ -104,23 +104,22 @@
     order: 0;
     flex-grow: 0;
   }
-
-  .-dark {
-    background-color: #1E1E1EBF;
-    ;
-    .title {
-      color: #FFFFFF;
-    }
-    .subtitle {
-      color: #FFFFFF;
-    }
-    .seperator {
-      /* Separator Color/Dark/With Transparency */
-      background: rgba(84, 84, 88, 0.65);
-    }
-    .actionLabel {
-      /* Default/SystemBlue/Dark */
-      color: #0A84FF;
-    }
-  }  
 }
+
+.-dark {
+  background-color: rgba(30, 30, 30, 0.75);
+  .title {
+    color: #FFFFFF;
+  }
+  .subtitle {
+    color: #FFFFFF;
+  }
+  .seperator {
+    /* Separator Color/Dark/With Transparency */
+    background-color: #545458A6;
+  }
+  .actionLabel {
+    /* Default/SystemBlue/Dark */
+    color: #0A84FF;
+  }
+}  
