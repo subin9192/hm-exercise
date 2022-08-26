@@ -67,7 +67,7 @@
     right: 2px;
   
     /* Separator Color/Light/With Transparency */
-    background: rgba(60, 60, 67, 0.36);
+    background-color: #3C3C435C;
 
     /* Inside auto layout */
     flex: none;
@@ -107,7 +107,8 @@
 }
 
 .-dark {
-  background-color: rgba(30, 30, 30, 0.75);
+  background-color: #1E1E1EBF;
+
   .title {
     color: #FFFFFF;
   }
