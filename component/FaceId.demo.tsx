@@ -15,6 +15,10 @@ export default demo({
       defaultValue: "Face ID",
     },
 
+    isScaned: {
+      type: "boolean",
+    }
+
     // * 숫자 예시
     // age: {
     //   type: "number",
