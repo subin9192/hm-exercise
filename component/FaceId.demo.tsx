@@ -17,6 +17,7 @@ export default demo({
 
     isScaned: {
       type: "boolean",
+      defaultValue: false,
     }
 
     // * 숫자 예시
