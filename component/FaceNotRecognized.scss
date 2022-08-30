@@ -1,0 +1,157 @@
+.faceNotRecognized {
+  background-color: #1E1E1EBF;
+  width: 270px;
+  height: 186.5px;
+  border-radius: 14px;
+  padding: 8px;
+  position: absolute;
+  backdrop-filter: blur(22px);
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .symbol {
+    margin-top: 24px;
+    margin-left: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .title {
+    width: 238px;
+    height: 22px;
+    margin-top: 15px;
+    margin-left: 11px;
+
+    /* Default/Bold/Body */
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+
+    /* identical to box height, or 129% */
+    text-align: center;
+    letter-spacing: -0.408px;
+
+    /* Label Color/Dark/Primary */
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .cancel {
+    width: 56px;
+    height: 22px;
+    position: absolute;
+    top: 150px;
+    left: 118px;
+
+    /* Default/Bold/Body */
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+
+    /* identical to box height, or 129% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.408px;
+
+    /* Default/SystemBlue/Dark */
+    color: #0A84FF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
+
+.try {
+  background-color: #1E1E1EBF;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  backdrop-filter: blur(22px);
+  /* Note: backdrop-filter has minimal browser support */
+  
+  border-radius: 14px;
+
+  .title {
+    position: absolute;
+    top: 85px;
+    left: 10px;
+  }
+
+  .description {
+    position: absolute;
+    width: 238px;
+    height: 18px;
+    left: 20px;
+    top: 123px;
+
+    /* Default/Regular/Footnote */
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+
+    /* identical to box height, or 138% */
+    text-align: center;
+    letter-spacing: -0.078px;
+
+    /* Label Color/Dark/Primary */
+    color: #FFFFFF;
+  }
+
+  .action {
+    width: 139px;
+    height: 22px;
+    position: absolute;
+    top: 140px;
+    left: 80px;
+
+    /* Default/Bold/Body */
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+
+    /* identical to box height, or 129% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.408px;
+
+    /* Default/SystemBlue/Dark */
+    color: #0A84FF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .cancel {
+    position: absolute;
+    top: 157px;
+  }
+}
