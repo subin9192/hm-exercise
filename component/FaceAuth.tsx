@@ -5,8 +5,14 @@ import FaceNotRecognized from "./FaceNotRecognized";
 // 컴포넌트 사용시 받아올 값을 여기에 명시합니다.
 export interface IFaceAuthProps {
   // 문자열 예시
-  
-  notScaned: boolean;
+
+  name: string;
+
+  title: string;
+
+  cancel: string;
+
+  scaned: boolean;
 
   // 숫자 예시
   // age: number;
@@ -20,9 +26,9 @@ const FaceAuth = (props: IFaceAuthProps) => {
   return (
     <>
       <div className="faceAuth">
-        {props.notScaned ?
-        <FaceId name={'Face ID'} isScaned={true} /> :
-        <FaceNotRecognized title={'Face Not Recognized'} cancel={'Cancel'} try={true} />
+        {props.scaned ?
+        <FaceId name={props.name} isScaned={true} /> :
+        <FaceNotRecognized title={props.title} cancel={props.cancel} try={true} />
         }
       </div>
 

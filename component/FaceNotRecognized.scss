@@ -26,7 +26,7 @@
     width: 238px;
     height: 22px;
     margin-top: 15px;
-    margin-left: 11px;
+    margin-left: 9px;
 
     /* Default/Bold/Body */
     font-family: 'SF Pro Text';
@@ -50,10 +50,10 @@
   }
 
   .cancel {
-    width: 56px;
+    width: 53px;
     height: 22px;
     position: absolute;
-    top: 150px;
+    top: 153px;
     left: 118px;
 
     /* Default/Bold/Body */
@@ -80,6 +80,7 @@
 }
 
 .try {
+  height: 251px;
   background-color: #1E1E1EBF;
 
   /* Auto layout */
@@ -95,8 +96,8 @@
 
   .title {
     position: absolute;
-    top: 85px;
-    left: 10px;
+    top: 90px;
+    left: 8px;
   }
 
   .description {
@@ -104,7 +105,7 @@
     width: 238px;
     height: 18px;
     left: 20px;
-    top: 123px;
+    top: 130px;
 
     /* Default/Regular/Footnote */
     font-family: 'SF Pro Text';
@@ -125,8 +126,8 @@
     width: 139px;
     height: 22px;
     position: absolute;
-    top: 140px;
-    left: 80px;
+    top: 172px;
+    left: 78px;
 
     /* Default/Bold/Body */
     font-family: 'SF Pro Text';
@@ -152,6 +153,6 @@
 
   .cancel {
     position: absolute;
-    top: 157px;
+    top: 217px;
   }
 }

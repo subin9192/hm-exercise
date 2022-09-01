@@ -5,13 +5,27 @@ export default demo({
   w: 6,
 
   // * 컴포넌트가 패널로 보여질 세로크기입니다.
-  h: 6,
+  h: 10,
 
   // * 컴포넌트 Props 들을 명시하는 공간입니다.
   controls: {
     // * 문자열 예시
+    name: {
+      type: "string",
+      defaultValue: "Face ID",
+    },
 
-    notScaned: {
+    title: {
+      type: "string",
+      defaultValue: "Face Not Recognized",
+    },
+
+    cancel: {
+      type: "string",
+      defaultValue: "Cancel",
+    },
+
+    scaned: {
       type: "boolean",
       defaultValue: false,
     },
