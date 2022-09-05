@@ -5,6 +5,8 @@ export interface IToggleButtonProps {
   // 문자열 예시
   // 숫자 예시
   // age: number;
+
+  checked: boolean;
 }
 
 // 리액트 컴포넌트 코드를 여기에 입력합니다.
@@ -20,7 +22,7 @@ const ToggleButton = (props: IToggleButtonProps) => {
     <>
       <div className="toggleButton">
         <label className="switch">
-          <input type="checkbox" />
+          <input type="checkbox" checked={props.checked} />
           <span className="slider round"></span>
         </label>
       </div>

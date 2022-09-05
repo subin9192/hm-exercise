@@ -15,12 +15,6 @@ export default demo({
     //   type: "number",
     //   defaultValue: 0,
     // },
-
-    checked:{
-      type: "boolean",
-      defaultValue: false,
-    }
-
     // * 선택 가능한 문자열 예시
     // language: {
     //   type: "select",
