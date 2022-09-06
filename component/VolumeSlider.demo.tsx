@@ -24,9 +24,9 @@ export default demo({
     //   },
     // },
     // * 불리언 예시
-    max: {
-      type: "boolean",
-      defaultValue: false,
+    percentage: {
+      type: "number",
+      defaultValue: 0,
     },
   },
 

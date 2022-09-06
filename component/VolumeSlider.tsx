@@ -6,7 +6,7 @@ export interface IVolumeSliderProps {
   // 문자열 예시
   // 숫자 예시
   // age: number;
-  max: boolean;
+  percentage: number;
 }
 
 // 리액트 컴포넌트 코드를 여기에 입력합니다.
@@ -16,9 +16,9 @@ const VolumeSlider = (props: IVolumeSliderProps) => {
   // HTML + React 코드가 여기 입력됩니다.
   return (
     <>
-      <div className={`volumeSlider${props.max ? ' affected' : ''}`}>
+      <div className={`volumeSlider${props.percentage ? ' affected' : ''}`}>
         <div id="player">
-          <div id="volume" style={{marginLeft : props.max ? '343px' : '0px'}}></div>
+          <div id="volume" style={{marginLeft : 343 * props.percentage / 100}}></div>
         </div>
       </div>
       {/* SCSS 스타일 파일 주입을 위한 코드입니다. 수정 X */}
