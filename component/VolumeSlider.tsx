@@ -6,6 +6,7 @@ export interface IVolumeSliderProps {
   // 문자열 예시
   // 숫자 예시
   // age: number;
+  max: boolean;
 }
 
 // 리액트 컴포넌트 코드를 여기에 입력합니다.
@@ -15,7 +16,7 @@ const VolumeSlider = (props: IVolumeSliderProps) => {
   // HTML + React 코드가 여기 입력됩니다.
   return (
     <>
-      <div className="volumeSlider">
+      <div className={`volumeSlider${props.max ? ' affected' : ''}`}>
         <div id="player">
           <div id="volume"></div>
         </div>

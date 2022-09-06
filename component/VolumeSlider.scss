@@ -22,7 +22,7 @@
 
     /* Fill Color/Light/Primary */
 
-    background: #007AFF;;
+    background: #78788033;
     border-radius: 2px;
 
     #volume {
@@ -30,7 +30,6 @@
       width: 28px;
       height: 28px;
       margin-top: -12px;
-      margin-left: 343px;
 
       border-radius: 50%;
       background: #ffffff;
@@ -42,5 +41,15 @@
       order: 1;
       flex-grow: 0;
     }
+  }
+}
+
+.affected {
+  #player {
+    background: #007AFF;
+  }
+
+  #volume {
+    margin-left: 343px;
   }
 }

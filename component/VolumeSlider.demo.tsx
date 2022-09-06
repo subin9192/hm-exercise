@@ -23,6 +23,11 @@ export default demo({
     //     selectableValues: ["English", "Korean"],
     //   },
     // },
+    // * 불리언 예시
+    max: {
+      type: "boolean",
+      defaultValue: false,
+    },
   },
 
   renderProps: (props) => {
