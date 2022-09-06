@@ -18,7 +18,7 @@ const VolumeSlider = (props: IVolumeSliderProps) => {
     <>
       <div className={`volumeSlider${props.max ? ' affected' : ''}`}>
         <div id="player">
-          <div id="volume"></div>
+          <div id="volume" style={{marginLeft : props.max ? '343px' : '0px'}}></div>
         </div>
       </div>
       {/* SCSS 스타일 파일 주입을 위한 코드입니다. 수정 X */}
