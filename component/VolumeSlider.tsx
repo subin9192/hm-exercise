@@ -13,12 +13,22 @@ export interface IVolumeSliderProps {
 const VolumeSlider = (props: IVolumeSliderProps) => {
   // 자바스크립트 코드가 여기에 입력됩니다.
   const [volume, setVolume] = useState(1);
+
+  let percentage = props.percentage;
+
+  if(percentage < 0) {
+    percentage = 0;
+  } else if(percentage > 100) {
+    percentage = 100;
+  }
+
   // HTML + React 코드가 여기 입력됩니다.
   return (
     <>
-      <div className={`volumeSlider${props.percentage ? ' affected' : ''}`}>
+      <div className="volumeSlider">
         <div id="player">
-          <div id="volume" style={{marginLeft : 343 * props.percentage / 100}}></div>
+          <div id="player_volume" style={{width: percentage}}></div>
+          <div id="volume" style={{marginLeft: 343 * percentage / 100}}></div>
         </div>
       </div>
       {/* SCSS 스타일 파일 주입을 위한 코드입니다. 수정 X */}

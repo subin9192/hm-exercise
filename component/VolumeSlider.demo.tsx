@@ -15,6 +15,11 @@ export default demo({
     //   type: "number",
     //   defaultValue: 0,
     // },
+    percentage: {
+      type: "number",
+      defaultValue: 0,
+    },
+  },
     // * 선택 가능한 문자열 예시
     // language: {
     //   type: "select",
@@ -24,11 +29,6 @@ export default demo({
     //   },
     // },
     // * 불리언 예시
-    percentage: {
-      type: "number",
-      defaultValue: 0,
-    },
-  },
 
   renderProps: (props) => {
     // (고급) 여기서 Props 를 중간에 자바스크립트로 바꿀 수 있습니다.

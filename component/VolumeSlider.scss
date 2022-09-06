@@ -25,6 +25,12 @@
     background: #78788033;
     border-radius: 2px;
 
+    #player_volume {
+      width: 100%;
+      height: 100%;
+      background: #007AFF;
+    }
+
     #volume {
       /* Knob */
       width: 28px;
@@ -40,12 +46,6 @@
       flex: none;
       order: 1;
       flex-grow: 0;
-    }
-  }
-
-  &.affected {
-    #player {
-      background: #007aff;
     }
   }
 }
