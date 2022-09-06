@@ -42,14 +42,14 @@
       flex-grow: 0;
     }
   }
-}
 
-.affected {
-  #player {
-    background: #007AFF;
-  }
+  &.affected {
+    #player {
+      background: #007aff;
+    }
 
-  #volume {
-    margin-left: 343px;
+    #volume {
+      margin-left: 343px;
+    }
   }
 }
