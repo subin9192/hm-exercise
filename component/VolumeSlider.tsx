@@ -16,16 +16,9 @@ const VolumeSlider = (props: IVolumeSliderProps) => {
   return (
     <>
       <div className="volumeSlider">
-        <input
-          type="range"
-          min={0}
-          max={1}
-          step={0.02}
-          value={volume}
-          onChange={(event) => {
-            setVolume(event.target.valueAsNumber);
-          }}
-        />
+        <div id="player">
+          <div id="volume"></div>
+        </div>
       </div>
       {/* SCSS 스타일 파일 주입을 위한 코드입니다. 수정 X */}
       <style jsx>{style}</style>
