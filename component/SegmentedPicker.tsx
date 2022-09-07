@@ -17,12 +17,12 @@ const SegmentedPicker = (props: ISegmentedPickerProps) => {
     // HTML + React 코드가 여기 입력됩니다.
     return (
       <>
-        <div className="segmentedPicker">
+        <div className="segmentedPicker" selectedIndex={props.repeat}>
           <div className="selection">
-              <input type="radio" id={props.switch} name="sample" value={props.switch} />
-                <label htmlFor={props.switch}>{props.switch ? "On" : "Off"}
+              <input type="radio" id={['On', 'Off']} name="sample" value={['On', 'Off']} />
+                <label htmlFor={['On, Off']}>['On', 'Off']
                   ::before
-                  <span>{props.switch ? "On" : "Off"}</span>
+                  <span>['On', 'Off']</span>
                   ::after
                 </label>
           </div>
