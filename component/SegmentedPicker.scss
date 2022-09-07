@@ -1,0 +1,44 @@
+.segmentedPicker {
+  /* SegmentedPicker
+Struct Picker
+*/
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px;
+
+  position: relative;
+  width: 343px;
+  height: 32px;
+
+  /* Fill Color/Light/Tertiary */
+
+  background: rgba(118, 118, 128, 0.12);
+  border-radius: 8.91px;
+
+  .selection {
+    width: 169.5px;
+    height: 100%;
+    display: block;
+    position: relative;
+    text-align: center;
+
+    /* System Background/Light/Primary */
+
+    background: rgba(118, 118, 128, 0.12);
+  }
+
+  input {
+    opacity: 0;
+    position: absolute;
+  }
+  input[type=radio]:checked+label {
+    color: #fff;
+  }
+  .selection:first-of-type input+label {
+    border-right: 0;
+  }
+  .selection input+label
+}
