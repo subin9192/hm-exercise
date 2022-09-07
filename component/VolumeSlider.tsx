@@ -27,7 +27,7 @@ const VolumeSlider = (props: IVolumeSliderProps) => {
     <>
       <div className="volumeSlider">
         <div id="player">
-          <div id="player_volume" style={{width: percentage}}></div>
+          <div id="player_volume" style={{width : `${percentage}%`}}></div>
           <div id="volume" style={{marginLeft: 343 * percentage / 100}}></div>
         </div>
       </div>
