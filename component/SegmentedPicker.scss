@@ -30,11 +30,11 @@ Struct Picker
     background: rgba(118, 118, 128, 0.12);
   }
 
-  input {
+  .selection input {
     opacity: 0;
     position: absolute;
   }
-  input[type="radio"]:checked + label {
+  .selection input[type="radio"]:checked + label {
     color: #fff;
   }
   .selection:first-of-type input + label {

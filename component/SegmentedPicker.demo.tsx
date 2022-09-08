@@ -28,10 +28,6 @@ export default demo({
     //   },
     // },
     // * 불리언 예시
-    switch: {
-      type: "boolean",
-      defaultValue: false,
-    },
   },
 
   renderProps: (props) => {

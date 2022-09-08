@@ -6,21 +6,19 @@ export interface ISegmentedPickerProps {
   // 숫자 예시
   // age: number;
   repeat: number;
-
-  switch: boolean;
 }
 
 // 리액트 컴포넌트 코드를 여기에 입력합니다.
 const SegmentedPicker = (props: ISegmentedPickerProps) => {
   // 자바스크립트 코드가 여기에 입력됩니다.
   Array.from({ length: 4 }).map(() => {
-    // HTML + React 코드가 여기 입력됩니다.
+    // HTML + React 코드가 여기 입력됩니다
     return (
       <>
         <div className="segmentedPicker" selectedIndex={props.repeat}>
           <div className="selection">
               <input type="radio" id={['On', 'Off']} name="sample" value={['On', 'Off']} />
-                <label htmlFor={['On, Off']}>['On', 'Off']
+                <label htmlFor={['On', 'Off']}>['On', 'Off']
                   ::before
                   <span>['On', 'Off']</span>
                   ::after
