@@ -17,8 +17,8 @@ const SegmentedPicker = (props: ISegmentedPickerProps) => {
   return (
     <>
       <div className="segmentedPicker">
-        Off
-        <button>On</button>
+        <span>Off</span>
+        <button><span>On</span></button>
       </div>
 
       {/* SCSS 스타일 파일 주입을 위한 코드입니다. 수정 X */}
