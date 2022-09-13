@@ -16,9 +16,9 @@ const SegmentedPicker = (props: ISegmentedPickerProps) => {
   // HTML + React 코드가 여기 입력됩니다
   return (
     <>
-      <div className="segmentedPicker" index={props.repeat}>
-        {props.off}
-        <button className="toggle">{props.on}</button>
+      <div className="segmentedPicker">
+        Off
+        <button>On</button>
       </div>
 
       {/* SCSS 스타일 파일 주입을 위한 코드입니다. 수정 X */}
