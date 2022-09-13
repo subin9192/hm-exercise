@@ -27,37 +27,11 @@ export default demo({
     //     selectableValues: ["English", "Korean"],
     //   },
     // },
-    id: {
-      type: "string",
-      defaultValue: "id",
-    },
-
-    label: {
-      type: "string",
-      defaultValue: "label",
-    },
-    
-    "data-on": {
-      type: "string",
-      defaultValue: "data-on",
-    },
-  
+    // * 불리언 예시
     isChecked: {
       type: "boolean",
       defaultValue: false,
     },
-  
-    "data-off": {
-      type: "string",
-      defaultValue: "data-off",
-    },
-  
-    description: {
-      type: "string",
-      defaultValue: "description",
-    },
-  
-    // * 불리언 예시
   },
 
   renderProps: (props) => {
