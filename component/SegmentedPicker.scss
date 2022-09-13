@@ -21,8 +21,7 @@ Struct Picker
     /* ✏️ Label */
     position: absolute;
     height: 16px;
-    left: 8px;
-    right: 7.5px;
+    left: 81.5px;
     top: calc(50% - 16px / 2 - 0px);
 
     font-family: "SF Pro Text";
@@ -52,5 +51,10 @@ Struct Picker
     border: 0.5px solid rgba(0, 0, 0, 0.04);
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
     border-radius: 6.93px;
+
+    span {
+      position: absolute;
+      left: 76px;
+    }
   }
 }
