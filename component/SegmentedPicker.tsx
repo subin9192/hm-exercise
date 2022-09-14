@@ -15,22 +15,35 @@ const SegmentedPicker = (props: ISegmentedPickerProps) => {
   return (
     <>
       <div className="segmentedPicker">
-        <span>Off</span>
-        <button><span>On</span></button>
-      </div>
-      <div className="segmentedPicker_2">
-        <span>Off</span>
-        <div className="separator"></div>
-        <span className="Off_2">Off</span>
-        <button><span>On</span></button>
-      </div>
-      <div className="segmentedPicker_3">
-        <span>Off</span>
-        <div className="separator"></div>
-        <span className="Off_2">Off</span>
-        <div className="separator_2"></div>
-        <span className="Off_3">Off</span>
-        <button><span>On</span></button>
+        <div className="switch">
+          <div className="Off">Off</div>
+
+          <button className="handle">
+            <div className="On">On</div>
+          </button>
+        </div>
+
+        <div className="switch_2">
+          <div className="Off">Off</div>
+          <div className="separator"></div>
+          <div className="Off_2">Off</div>
+
+          <button className="handle">
+            <div className="On">On</div>
+          </button>
+        </div>
+
+        <div className="switch_3">
+          <div className="Off">Off</div>
+          <div className="separator"></div>
+          <div className="Off_2">Off</div>
+          <div className="separator_2"></div>
+          <div className="Off_3">Off</div>
+
+          <button className="handle">
+            <div className="On">On</div>
+          </button>
+        </div>
       </div>
 
       {/* SCSS 스타일 파일 주입을 위한 코드입니다. 수정 X */}
