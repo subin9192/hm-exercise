@@ -58,3 +58,102 @@ Struct Picker
     }
   }
 }
+
+.segmentedPicker_2 {
+  /* SegmentedPicker
+Struct Picker
+*/
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px;
+
+  position: relative;
+  width: 343px;
+  height: 32px;
+
+  /* Fill Color/Light/Tertiary */
+  background: rgba(118, 118, 128, 0.12);
+  border-radius: 8.91px;
+
+  span {
+    /* ✏️ Label */
+    position: absolute;
+    height: 16px;
+    left: 49.5px;
+    top: calc(50% - 16px / 2 - 0px);
+
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    /* or 154% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.08px;
+
+    /* Label Color/Light/Primary */
+    color: #000000;
+  }
+
+  .separator {
+    width: 0.65px;
+    height: 16px;
+
+    /* Separator */
+    position: absolute;
+    left: 33.28%;
+    right: 1.15%;
+    top: 21.43%;
+    bottom: 21.44%;
+
+    /* Separator Color/Light/With Transparency */
+    background: rgba(60, 60, 67, 0.36);
+    border-radius: 0.5px;
+  }
+
+  .Off_2 {
+    /* ✏️ Label */
+    position: absolute;
+    height: 16px;
+    left: 162.5px;
+    top: calc(50% - 16px / 2 - 0px);
+
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    /* or 154% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.08px;
+
+    /* Label Color/Light/Primary */
+    color: #000000;
+  }
+
+  button {
+    /* _Option */
+    width: 113px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+
+    /* System Background/Light/Primary */
+    background: #ffffff;
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 6.93px;
+
+    span {
+      position: absolute;
+      left: 51px;
+    }
+  }
+}
