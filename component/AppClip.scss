@@ -1,0 +1,254 @@
+.appClip {
+  .appClip_container {
+    /* AppClip */
+    position: relative;
+    width: 355px;
+    height: 410px;
+
+    background: rgba(30, 30, 30, 0.75);
+    backdrop-filter: blur(40px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 34px;
+
+    .title_img {
+      /* Image */
+      position: absolute;
+      height: 236px;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+    }
+
+    .close_button {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+
+      /* Background */
+      position: absolute;
+      left: 85%;
+      right: 0%;
+      top: 5%;
+      bottom: 0%;
+
+      background: rgba(37, 37, 37, 0.78);
+      backdrop-filter: blur(27.1828px);
+      /* Note: backdrop-filter has minimal browser support */
+    }
+
+    .title {
+      /* Clip Name */
+      width: 175px;
+      height: 28px;
+      position: absolute;
+      top: 64%;
+      left: 7%;
+
+      /* Default/Bold/Title2 */
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+      /* identical to box height, or 127% */
+
+      letter-spacing: 0.35px;
+
+      /* Label Color/Dark/Primary */
+      color: #ffffff;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+
+    .description {
+      /* Here’s a place for the App Clip’s description... */
+      width: 175px;
+      height: 32px;
+      position: absolute;
+      top: 71%;
+      left: 7%;
+
+      /* Default/Regular/Caption1 */
+      font-family: "SF Pro Text";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      /* or 133% */
+
+      /* Label Color/Dark/Primary */
+      color: #ffffff;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+
+    .open_button {
+      /* Open Button */
+
+      /* Auto layout */
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 12px 27px;
+      gap: 10px;
+
+      position: absolute;
+      width: 98px;
+      height: 46px;
+      right: 24px;
+      top: 262px;
+
+      /* Default/SystemBlue/Dark */
+      background: #0a84ff;
+      border-radius: 24px;
+
+      .open_button_title {
+        /* Open */
+        width: 44px;
+        height: 22px;
+
+        /* Default/Bold/Body */
+        font-family: "SF Pro Text";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 22px;
+        /* identical to box height, or 129% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.408px;
+
+        /* Label Color/Dark/Primary */
+        color: #ffffff;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+    }
+
+    .app_name_icon {
+      /* ✏️ Icon */
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+    }
+
+    .app_name_desc {
+      /* Powered by */
+      width: 64px;
+      height: 13px;
+      position: absolute;
+      top: 87%;
+      left: 17%;
+
+      /* Default/Bold/Caption2 */
+      font-family: "SF Pro Text";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 13px;
+      /* identical to box height, or 118% */
+
+      letter-spacing: 0.06px;
+
+      /* Label Color/Dark/Secondary */
+      color: rgba(235, 235, 245, 0.6);
+
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    .app_name {
+      /* App Name */
+      width: 66px;
+      height: 18px;
+      position: absolute;
+      top: 91%;
+      left: 17%;
+
+      /* Default/Bold/Footnote */
+      font-family: "SF Pro Text";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 18px;
+      /* identical to box height, or 138% */
+
+      letter-spacing: -0.078px;
+
+      /* Label Color/Dark/Primary */
+      color: #ffffff;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+
+    .app_store_icon {
+      width: 5.59px;
+      height: 7.49px;
+
+      /* Vector */
+      position: absolute;
+      width: 5.59px;
+      height: 7.49px;
+      right: 72.83px;
+      bottom: 2.69px;
+
+      background: #ffffff;
+    }
+
+    .app_store {
+      /* App Store */
+      width: 58px;
+      height: 16px;
+      position: absolute;
+      left: 72%;
+      top: 89%;
+
+      font-family: "SF Pro Text";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+
+      /* Label Color/Dark/Secondary */
+      color: rgba(235, 235, 245, 0.6);
+
+      /* Inside auto layout */
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+
+    .sf_icon {
+      position: absolute;
+      top: 89%;
+      left: 88%;
+      
+      /* Inside auto layout */
+      flex: none;
+      order: 2;
+      flex-grow: 0;
+    }
+  }
+}
