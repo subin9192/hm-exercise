@@ -17,26 +17,25 @@ const ModernCalendar = (props: IModernCalendarProps) => {
   return (
     <>
       <div className="modernCalendar">
-        <div class="calendar">
-          <div class="header">
-            <div class="year-month"></div>
-            <div class="nav">
-              <button class="nav-btn go-prev">&lt;</button>
-              <button class="nav-btn go-today">Today</button>
-              <button class="nav-btn go-next">&gt;</button>
+        <div className="calendar">
+          <div className="header">
+            <div className="year-month"></div>
+            <div className="nav">
+              <button className="nav-btn go-prev">&lt;</button>
+              <button className="nav-btn go-next">&gt;</button>
             </div>
           </div>
-          <div class="main">
-            <div class="days">
-              <div class="day">SUN</div>
-              <div class="day">MON</div>
-              <div class="day">TUE</div>
-              <div class="day">WED</div>
-              <div class="day">THU</div>
-              <div class="day">FRI</div>
-              <div class="day">SAT</div>
+          <div className="main">
+            <div className="days">
+              <div className="day">SUN</div>
+              <div className="day">MON</div>
+              <div className="day">TUE</div>
+              <div className="day">WED</div>
+              <div className="day">THU</div>
+              <div className="day">FRI</div>
+              <div className="day">SAT</div>
             </div>
-            <div class="dates"></div>
+            <div className="dates"></div>
           </div>
         </div>{" "}
       </div>

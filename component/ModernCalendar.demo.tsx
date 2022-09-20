@@ -5,7 +5,7 @@ export default demo({
   w: 6,
 
   // * 컴포넌트가 패널로 보여질 세로크기입니다.
-  h: 6,
+  h: 12,
 
   // * 컴포넌트 Props 들을 명시하는 공간입니다.
   controls: {
