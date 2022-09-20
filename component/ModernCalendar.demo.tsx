@@ -10,10 +10,10 @@ export default demo({
   // * 컴포넌트 Props 들을 명시하는 공간입니다.
   controls: {
     // * 문자열 예시
-    name: {
-      type: "string",
-      defaultValue: "default name?",
-    },
+    // name: {
+    //   type: "string",
+    //   defaultValue: "default name?",
+    // },
 
     // * 숫자 예시
     // age: {
