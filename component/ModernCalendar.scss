@@ -74,7 +74,7 @@
         flex: none;
         order: 1;
         flex-grow: 0;
-        
+
         .prev {
           /* Inside auto layout */
           flex: none;
@@ -92,24 +92,65 @@
     }
 
     .days {
+      /* _Day Row */
+      /* Auto layout */
       display: flex;
-      margin: 25px 0 10px;
-    }
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 22px;
 
-    .dates {
-      display: flex;
-      flex-flow: row wrap;
-      height: 500px;
-      border-top: 1px solid #333333;
-      border-right: 1px solid #333333;
+      position: absolute;
+      height: 18px;
+      left: 16px;
+      right: 16px;
+      top: 56px;
+
+      .day {
+        /* Day */
+        width: 32px;
+        height: 18px;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 6;
+        flex-grow: 0;
+      }
     }
 
     .date {
-      width: calc(100% / 7);
-      padding: 15px;
-      text-align: right;
-      border-bottom: 1px solid #333333;
-      border-left: 1px solid #333333;
+      /* ✏️ Digit */
+      width: 32px;
+      height: 32px;
+
+      /* Inside auto layout */
+      flex: none;
+      order: 3;
+      flex-grow: 0;
+
+      /* Date */
+      position: absolute;
+      height: 24px;
+      left: 0px;
+      right: 0px;
+      top: calc(50% - 24px / 2);
+
+      /* Default/Regular/Title3 */
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      /* identical to box height, or 120% */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.38px;
+
+      /* Default/SystemRed/Light */
+      color: #ff3b30;
     }
   }
 }
