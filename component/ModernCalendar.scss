@@ -48,9 +48,38 @@
         flex: none;
         order: 0;
         flex-grow: 0;
+
+        h3 {
+          /* Month */
+          width: 97px;
+          height: 24px;
+          margin-left: 6px;
+          margin-top: 2px;
+
+          /* Default/Bold/Title3 */
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          /* identical to box height, or 120% */
+
+          letter-spacing: 0.38px;
+
+          /* Default/SystemRed/Light */
+          color: #ff3b30;
+
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+        }
       }
 
       .ym_next {
+        margin-left: -141px;
+        cursor: pointer;
+
         /* Inside auto layout */
         flex: none;
         order: 1;
@@ -76,6 +105,9 @@
         flex-grow: 0;
 
         .prev {
+          margin-left: -10px;
+          cursor: pointer;
+
           /* Inside auto layout */
           flex: none;
           order: 0;
@@ -83,6 +115,9 @@
         }
 
         .next {
+          margin-right: 6px;
+          cursor: pointer;
+
           /* Inside auto layout */
           flex: none;
           order: 1;
@@ -91,66 +126,362 @@
       }
     }
 
-    .days {
-      /* _Day Row */
-      /* Auto layout */
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 22px;
-
-      position: absolute;
-      height: 18px;
-      left: 16px;
-      right: 16px;
-      top: 56px;
+    .date {
+      padding: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(17px, 1fr));
+      grid-gap: 23px;
+      box-sizing: border-box;
 
       .day {
-        /* Day */
         width: 32px;
         height: 18px;
+        margin-top: 34px;
 
-        /* Inside auto layout */
-        flex: none;
-        order: 6;
-        flex-grow: 0;
+        /* Default/Bold/Footnote */
+        font-family: "SF Pro Text";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        /* identical to box height, or 138% */
+
+        letter-spacing: -0.078px;
+
+        /* Label Color/Light/Tertiary */
+        color: rgba(60, 60, 67, 0.3);
+      }
+
+      .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25px;
+        color: #ff3b30;
+
+        /* Date */
+        /* Default/Regular/Title3 */
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+
+        &--current {
+          /* Digit */
+          width: 32px;
+          height: 32px;
+          margin-top: -4px;
+          margin-left: -4px;
+          padding-top: 4px;
+          border-radius: 100px;
+          cursor: pointer;
+
+          /* Default/SystemRed/Light */
+          background: #ff3b30;
+
+          /* Date */
+          /* Default/Bold/Title3 */
+          font-weight: 600;
+
+          /* Label Color/Dark/Primary */
+          color: #ffffff;
+        }
       }
     }
 
-    .date {
-      /* ✏️ Digit */
-      width: 32px;
-      height: 32px;
+    .time {
+      h3 {
+        /* Time */
+        width: 45px;
+        height: 24px;
+        margin-left: 25px;
+        margin-top: -6px;
 
-      /* Inside auto layout */
-      flex: none;
-      order: 3;
-      flex-grow: 0;
+        /* Default/Bold/Title3 */
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
 
-      /* Date */
-      position: absolute;
-      height: 24px;
-      left: 0px;
-      right: 0px;
-      top: calc(50% - 24px / 2);
+        letter-spacing: 0.38px;
 
-      /* Default/Regular/Title3 */
-      font-family: "SF Pro Display";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      /* identical to box height, or 120% */
+        /* Label Color/Light/Primary */
+        color: #000000;
 
-      display: flex;
-      align-items: center;
-      text-align: center;
-      letter-spacing: 0.38px;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
 
-      /* Default/SystemRed/Light */
-      color: #ff3b30;
+      .time_picker {
+        /* _Time Picker */
+        width: 86px;
+        height: 36px;
+        margin-left: 136px;
+        margin-top: -32px;
+
+        /* Fill Color/Light/Tertiary */
+        background: rgba(118, 118, 128, 0.12);
+
+        /* Label Color/Light/Primary */
+        color: #000000;
+
+        border-radius: 6px;
+
+        /* Inside auto layout */
+
+        .hour {
+          position: absolute;
+          width: 28px;
+          height: 28px;
+          left: 143px;
+          bottom: 17px;
+
+          /* Default/Regular/Title2 */
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 28px;
+          /* identical to box height, or 127% */
+
+          text-align: right;
+          letter-spacing: 0.35px;
+        }
+
+        .separator {
+          /* : */
+          position: absolute;
+          width: 6px;
+          height: 28px;
+          left: 177px;
+          bottom: 17px;
+
+          /* Default/Regular/Title2 */
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 28px;
+          /* identical to box height, or 127% */
+
+          text-align: right;
+          letter-spacing: 0.35px;
+        }
+
+        .minute {
+          position: absolute;
+          width: 28px;
+          height: 28px;
+          left: 183px;
+          bottom: 17px;
+
+          /* Default/Regular/Title2 */
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 28px;
+          /* identical to box height, or 127% */
+
+          text-align: right;
+          letter-spacing: 0.35px;
+        }
+      }
+
+      .time_option {
+        /* SegmentedPicker
+Struct Picker
+*/
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 2px;
+
+        width: 101px;
+        height: 36px;
+        margin-left: 231px;
+        margin-top: -36px;
+
+        /* Fill Color/Light/Tertiary */
+        background: rgba(118, 118, 128, 0.12);
+
+        /* Label Color/Light/Primary */
+        color: #000000;
+
+        border-radius: 8.91px;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+
+        .am_selected {
+          /* _Option */
+          width: 48.5px;
+          height: 32px;
+
+          /* System Background/Light/Primary */
+          background: #ffffff;
+          border: 0.5px solid rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12),
+            0px 3px 1px rgba(0, 0, 0, 0.04);
+          border-radius: 6.93px;
+
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          align-self: stretch;
+          flex-grow: 1;
+
+          /* ✏️ Label */
+          position: absolute;
+          right: 62px;
+          bottom: 17px;
+
+          font-family: "SF Pro Text";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 20px;
+          /* or 154% */
+
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          text-align: center;
+          letter-spacing: -0.08px;
+        }
+
+        .pm {
+          width: 33px;
+          height: 16px;
+
+          position: absolute;
+          right: 13px;
+          bottom: 25px;
+
+          font-family: "SF Pro Text";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 20px;
+          /* or 154% */
+
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: -0.08px;
+        }
+
+        .am {
+          width: 33px;
+          height: 16px;
+
+          /* ✏️ Label */
+          position: absolute;
+          right: 63px;
+          bottom: 24px;
+
+          font-family: "SF Pro Text";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 20px;
+          /* or 154% */
+
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: -0.08px;
+        }
+
+        .pm_selected {
+          /* _Option */
+          width: 48.5px;
+          height: 32px;
+
+          /* System Background/Light/Primary */
+          background: #ffffff;
+          border: 0.5px solid rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12),
+            0px 3px 1px rgba(0, 0, 0, 0.04);
+          border-radius: 6.93px;
+
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          align-self: stretch;
+          flex-grow: 1;
+
+          /* ✏️ Label */
+          position: absolute;
+          right: 13px;
+          bottom: 17px;
+
+          font-family: "SF Pro Text";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 20px;
+          /* or 154% */
+
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          text-align: center;
+          letter-spacing: -0.08px;
+        }
+      }
+    }
+  }
+
+  .-dark {
+    /* System Background/Dark Elevated/Primary */
+    background: #1c1c1e;
+
+    .day {
+      /* Label Color/Dark/Tertiary */
+      color: rgba(235, 235, 245, 0.3);
+    }
+
+    .number {
+      /* Default/SystemRed/Dark */
+      color: #ff453a;
+    }
+
+    .time {
+      h3 {
+        /* Label Color/Dark/Primary */
+        color: #ffffff;
+      }
+
+      .time_picker {
+        /* Fill Color/Dark/Tertiary */
+        background: rgba(118, 118, 128, 0.24);
+
+        /* Label Color/Dark/Primary */
+        color: #ffffff;
+      }
+
+      .time_option {
+        /* Fill Color/Dark/Tertiary */
+        background: rgba(118, 118, 128, 0.24);
+
+        /* Label Color/Dark/Primary */
+        color: #ffffff;
+
+        .am_selected,
+        .pm_selected {
+          background: #636366;
+        }
+      }
     }
   }
 }

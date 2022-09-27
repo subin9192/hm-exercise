@@ -29,6 +29,21 @@ export default demo({
     //     selectableValues: ["English", "Korean"],
     //   },
     // },
+        theme: {
+          type: "select",
+          defaultValue: {
+            defaultValue: "Light",
+            selectableValues: ["Light", "Dark"],
+          },
+        },
+
+        time_option: {
+          type: "select",
+          defaultValue: {
+            defaultValue: "AM",
+            selectableValues: ["AM", "PM"],
+          },
+        },
   },
 
   renderProps: (props) => {
